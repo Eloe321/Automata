@@ -1,0 +1,35 @@
+.elevator-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .elev-button {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+    font-size: 24px;
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15), inset -2px -2px 5px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .elev-button:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), inset -1px -1px 4px rgba(255, 255, 255, 0.5);
+    background: linear-gradient(145deg, #d0d0d0, #f0f0f0);
+  }
+  
+  .elev-button:active {
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #b0b0b0, #d0d0d0);
+    transform: translateY(2px);
+  }
+  
