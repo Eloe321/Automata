@@ -26,7 +26,7 @@
         DOORS_OPEN: 'Doors are opening... <br />Please Exit or Enter the Elevator',
       };
   
-      const handleState = () => {
+      const handleStateMessages = () => {
         const state = elevatorController.state;
         if (stateMessages[state]) {
           setCurrentMessage(stateMessages[state]);
@@ -38,7 +38,7 @@
       const interval = setInterval(() => {
         setCurrentFloor(elevatorController.currentFloor);
         setElevatorState(elevatorController.state);
-        handleState();
+        handleStateMessages();
       
       }, 1000);
       return () => clearInterval(interval);  
